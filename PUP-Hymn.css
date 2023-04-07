@@ -114,13 +114,13 @@ audio{
 }
 @media only screen and (max-width: 500px){
     *{
-        font-size: 14px;
+        font-size: 16px;
     }
     
     .box-main{
         border: 1px solid transparent;
-        padding: 20px;
-        width: 300px;
+        padding: 30px;
+        width: 380px;
         height: 600px;
         border-radius: 20px;
         background-color: rgb(153, 148, 148);
@@ -128,8 +128,58 @@ audio{
     }
     
 }
-
-@media only screen and (max-width: 300px){
+@media only screen and (max-width: 450px){
+    *{
+        font-size: 14px;
+    }
+    
+    .box-main{
+        border: 1px solid transparent;
+        padding: 20px;
+        width: 350px;
+        height: 600px;
+        border-radius: 20px;
+        background-color: rgb(153, 148, 148);
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px
+    }
+    
+}
+@media only screen and (max-width: 400px){
+    *{
+        font-size: 14px;
+    }
+    .song-title{
+        font-family: "GothamMedium_1";
+        font-size: 40px; 
+        text-align: center;
+    }
+    
+    .song-writer{
+        font-family: "GothamLight";
+        font-size: 12px;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    .box-main{
+        border: 1px solid transparent;
+        padding: 20px;
+        width: 280px;
+        height: 600px;
+        border-radius: 20px;
+        background-color: rgb(153, 148, 148);
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px
+    }
+    audio{
+        position: absolute;
+        top: 600px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+    }
+    
+}
+@media only screen and (max-width: 330px){
     *{
         font-size: 12px;
     }
