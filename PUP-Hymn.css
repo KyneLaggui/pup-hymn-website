@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "GothamBook" ;
+    src: url(Hymm-Fonts/GothamBook.ttf) format("truetype");
+    
+}
+@font-face {  
+    font-family: "GothamMedium_1" ;
+    src: url(Hymm-Fonts/GothamMedium_1.ttf) format("truetype"); 
+}
+@font-face {  
+    font-family: "Gotham-Bold" ;
+    src: url(Hymm-Fonts/GothamBold.ttf) format("truetype"); 
+}
+@font-face {  
+    font-family: "GothamLight" ;
+    src: url(Hymm-Fonts/GothamLight.ttf) format("truetype"); 
+}
+*{
+    font-size: 18px;
+}
+
+html{
+    margin:0;
+    padding: 0;
+    background-image: url("Hymn-Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+}
+
+.song-title{
+    font-family: "GothamMedium_1";
+    font-size: 40px; 
+    text-align: center;
+}
+
+.song-writer{
+    font-family: "GothamLight";
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 25px;
+}
+.music-player{
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.pup-lyrics{
+    font-family: "GothamMedium_1";
+    line-height: 25px;
+    
+}
+.pup-lyrics:hover{
+    -webkit-text-fill-color:  white;
+}
+.whole-lyrics{
+    font-family: "GothamMedium_1";
+    color: transparent;
+    line-height: 25px;
+    text-shadow: 0 0 4px black;
+   
+}
+.whole-lyrics:hover{
+   -webkit-text-fill-color:  white;
+    
+}
+
+.highlighted-text{
+    font-family: "Gotham-bold";
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+}
+.box-main{
+    border: 1px solid transparent;
+    padding: 30px;
+    width: 500px;
+    height: 570px;
+    border-radius: 20px;
+    background-color: rgb(145, 139, 139);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px
+}
+
+audio{
+    position: absolute;
+    top: 600px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px){
+    *{
+        font-size: 16px;
+    }
+    
+    .box-main{
+        border: 1px solid transparent;
+        padding: 30px;
+        width: 400px;
+        height: 600px;
+        border-radius: 20px;
+        background-color: rgb(153, 148, 148);
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px
+    }
+    
+}
